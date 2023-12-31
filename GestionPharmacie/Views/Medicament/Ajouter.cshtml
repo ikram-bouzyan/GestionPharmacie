@@ -1,0 +1,28 @@
+﻿@model GestionPharmacie.Models.Medicament
+
+@{
+    ViewData["Title"] = "Ajouter Medicament";
+}
+
+<h1>Ajouter Medicament</h1>
+
+<form asp-controller="Medicament" asp-action="Ajouter" method="post">
+    <div class="form-group">
+        <label asp-for="Numero "></label>
+        <input asp-for="Numero" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NomFabriquant"></label>
+        <input asp-for="NomFabriquant" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateExpiration"></label>
+        <input asp-for="DateExpiration" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Ajouter Medicament</button>
+
+</form>
+
